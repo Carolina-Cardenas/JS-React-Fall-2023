@@ -83,3 +83,5 @@ Should give you => "Today we have a special winter deal!"
 */
 let cafeDeal = "Today we have a special summer deal!";
 console.log(cafeDeal.replace("summer", "winter"));
+
+let string ="";
