@@ -6,6 +6,9 @@ Where Technigo Cafe is replaced by the name of your cafe that is stored in the v
 */
 
 const cafeName = "Technigo Cafe";
+
+// TEMPLATE LITERALS === backtick approach’
+
 console.log(`Welcome to ${cafeName}! What would you like to order today?`);
 let string =""
 
@@ -21,9 +24,22 @@ let priceCoffe = 40;
 let numberOfCoffe = 55;
 let totalPrice = priceCoffe * numberOfCoffe;
 console.log(`There you go, that'll be ${totalPrice} euros`);
+
 // Good practice Approach
 
-// Bad practive Approach
+let coffeePrice = 335; 
+// Aparently super expensive coffee!
+
+const numberOfCoffees = 10;
+
+ totalPrice = coffeePrice * numberOfCoffees;
+let message = `There you go, that'll be ${totalPrice} KR`;
+console.log(message);
+
+// Bad practice Approach
+
+let myStatment = `There you go, that'll be ${coffeePrice * numberOfCoffees} KR`;
+console.log(myStatment);
 
 /*
 3)
@@ -36,6 +52,11 @@ let trueOrFalse = true;
 console.log(
   `You said this coffee is the best, that was actually ${trueOrFalse}`
 );
+let isBestCofee = true;
+console.log(
+  `You said this coffee is the best, that was actually ${isBestCofee}`
+);
+
 /*
 4)
 Create a variable called cafeGuests, that shows us how many cafeGuests we have.
@@ -49,7 +70,15 @@ let cafeGuests = 15;
 console.log(cafeGuests);
 cafeGuests = 20;
 console.log(`This should give you the new value ${cafeGuests}`);
+
+console.log(cafeGuests);
+cafeGuests = false;
+console.log(cafeGuests);
+cafeGuests = ["I", "love", "Hip Hop"];
+console.log(cafeGuests);
+
 /*
+
 5)
 Create a variable called maxGuests, that shows us how many guests are allowed in the cafe.
 Assign it a value.
@@ -60,13 +89,21 @@ Print it out. => This should give you an error because it shouldn't be able to b
 const maxGuests = 10;
 console.log(maxGuests);
 /*maxGuests = 30;*/
+
+maxGuests = 10;
+console.log(maxGuests);
 //maxGuests = "I also love rock n roll!";
+
 /*
 6)
 Create a variable that stores a string.
 Print out that string in only UPPERCASE letters.
 */
 let openCafe = "hello world";
+let favoriteBand = "black sabbath";
+console.log(favoriteBand);
+let upperCase = favoriteBand.toUpperCase();
+console.log(upperCase);
 
 console.log(openCafe.toUpperCase());
 openCafe = openCafe.toLowerCase();
@@ -76,6 +113,9 @@ console.log(openCafe);
 Print out the same string in only lowercase letters.
 */
 console.log(openCafe.toLowerCase());
+
+console.log(upperCase.toLowerCase());
+
 /*
 8) **BONUS**
 Print out the string "Today we have a special summer deal!". 
@@ -85,3 +125,7 @@ Should give you => "Today we have a special winter deal!"
 */
 let cafeDeal = "Today we have a special summer deal!";
 console.log(cafeDeal.replace("summer", "winter"));
+
+let specialDeal = "Today we have a special summer deal!";
+let updatedDeal = specialDeal.replace("summer", "winter");
+console.log(updatedDeal);
